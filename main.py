@@ -8,7 +8,8 @@ root.title('Notepad')
 root.geometry('500x500')
 
 # Create text area
-textBox = Text(root, height=50, width=100, wrap=WORD)
+textFont = font.Font(size=12)
+textBox = Text(root, height=26, width=55, wrap=WORD, font=textFont)
 textBox.place(x=0, y=26)
 
 def save_file():
